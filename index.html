@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <br lang="ko">
   <head>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,48 +9,62 @@
     <title>My First Web Page!</title>
   </head>
   <body>
-  <div>
-    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
-    <input type="search" value="검색"/><br/>
-  </div>
-  <div id="profile">
-    <img src="image/hl 3.jpg" width="100px"/>
-    <div>
-        <h2>honey, honey, my honey❤️❤️</h2>
-        <button>프로필 편집</button>
+    <div id="top">
+        <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"/>
+        <input type="search" value="검색"/>
+        <div>
+            <i class="fas fa-home"></i>
+            <i class="fas fa-paper-plane"></i>
+            <i class="fas fa-compass"></i>
+            <i class="fas fa-heart"></i>
+        </div>
     </div>
-  </div>
-  <div>
-    <p>
-        <strong>
+    <div id="profile">
+        <div id="profile_pic">
+            <img class="circle_pic" src="image/hl 3.jpg"/>
+        </div>
+        <div id="profile_info">
+            <div id="id">
+                honey, honey, my honey❤️❤️
+            <i class="fas fa-cog"></i>
+            </div>
+            <button>프로필 편집</button>
+        </div>
+    </div>
+    <div>
+        <p>
+            <strong>
             남만시경성 (nammanxiseoul)
-        </strong><br/>
-        성현이꺼
-    </p>
+            </strong><br/>
+            her name is
+        </p>
     <p>
         <a href="https://www.instagram.com/nammanxi" target="_blank" title="인스타 주소">https://www.instagram.com/nammanxi/</a>
     </p>
   </div>
 </div>
 <div>
+<div id="highlight_area">
     <div class="highlight">
-        <div>
-            <img src="image/hl 1.jpg"/>
+        <div class="highlight_pic">
+            <img class="circle_pic" src="image/hl 1.jpg"/>
         </div>
         <div>
             😎
         </div>
     </div>
     <div class="highlight">
-        <div>
-            <img src="image/hl 2.jpg"/>
+        <div class="highlight_pic">
+            <img class="circle_pic" src="image/hl 2.jpg"/>
         </div>
         <div>
             🥰
         </div>
     </div>
     <div></div>
-        <div>
+</div>
+    <div id="stat_bar">
+        <div class="stat">
         게시물<br/>
         9
         </div>
@@ -62,17 +77,31 @@
         1
         </div>
     </div>
-    <div>다음 공란   </div>
+    <div id="sub_icons">
+        <div class="selected">
+            <i class="fas fa-border-all"></i>
+        </div>
+        <div><i class="fas fa-film"></i></div>
+        <div><i class="far fa-play-circle"></i></div>
+        <div><i class="far fa-bookmark"></i></div>
+        <div><i class="fas fa-user-tag"></i></div>
+    </div>
     <div>
-        <img src="image/thumbnails/1.jpg" width="32%"/>
-        <img src="image/thumbnails/2.jpg" width="32%"/>
-        <img src="image/thumbnails/3.jpg" width="32%"/>
-        <img src="image/thumbnails/4.jpg" width="32%"/>
-        <img src="image/thumbnails/5.jpg" width="32%"/>
-        <img src="image/thumbnails/6.jpg" width="32%"/>
-        <img src="image/thumbnails/7.jpg" width="32%"/>
-        <img src="image/thumbnails/8.jpg" width="32%"/>
-        <img src="image/thumbnails/9.jpg" width="32%"/>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/1.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/2.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/3.jpg" width="32%" class="thumbnails"/>
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/4.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/5.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/6.jpg" width="32%" class="thumbnails"/>
+        </div>
+        <div class="thumbnail_grid">
+            <img src="image/thumbnails/7.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/8.jpg" width="32%" class="thumbnails"/>
+            <img src="image/thumbnails/9.jpg" width="32%" class="thumbnails"/>
+        </div>
     </div>
   </body>
 </html>
