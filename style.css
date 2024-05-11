@@ -1,3 +1,10 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+}
+
 h2{
     color:red;
 }
@@ -81,14 +88,19 @@ button{
 }
 
 #top{
-    display:grid;
+    display: flex;
     grid-template-columns: 4fr 7fr 4fr;
     height: 4vw;
     min-height: 3vw;
-
     border-bottom: solid gray 0.1px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    align-items: center;
 }
+
+#top > * {
+    flex: 1;
+} 
 
 #top img{
     margin-left: auto;
@@ -122,7 +134,7 @@ i{
 }
 
 #top i{
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 #top div{
