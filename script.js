@@ -25,11 +25,13 @@ document.addEventListener("DOMContentLoaded",
                     userInfo.innerHTML = _userInfo
                     summary.innerHTML = _summary
 
+                    // if (_profileDetail.startsWith("http")){
+                    //     _profileDetail = "<a herf=" + _profileDetail + ">" + _profileDetail + "</a>"
+                    // }
                     if (_profileDetail.startsWith("http")){
-                        _profileDetail = "<a herf=" + _profileDetail + ">" + _profileDetail + "</a>"
-                    }
-
+                        _profileDetail = `<a href="${_profileDetail}" target="_blank" title="인스타 주소">${_profileDetail}</a>`;
                     profileDetail.innerHTML = _profileDetail
+                    }
 
                     e.target.textContent = "프로필 편집"
                     changing = false
@@ -46,6 +48,25 @@ document.addEventListener("DOMContentLoaded",
                     e.target.textContent = "프로필 편집 완료"
                     changing = true
                 }
+            }
+        )
+
+        let profile_pic = document.querySelector("#profile_pic .circle_pic")
+        profile_pic.addEventListener("mouseover", 
+            function(e){
+                e.target.style.filter = "grayscale(50%)"
+            }
+        )
+        
+        profile_pic.addEventListener("mouseleave",
+            function(e){
+                e.target.style.filter = "grayscale(0%)"
+            }
+        )
+
+        profile_pic.addEventListener("click",
+            function(e){
+                profile_pic.setAttribute("src", prompt("이미지 url을 입력해주세요"))
             }
         )
     }
